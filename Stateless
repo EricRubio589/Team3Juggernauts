@@ -1,0 +1,7 @@
+The major difference between stateful and stateless is whether or not they store data regarding their sessions, and how they respond to requests.
+Stateful services keep track of sessions or transactions and respond to the same inputs in different ways depending on their history. 
+Clients maintain sessions for stateless services, which are focused on activities that manipulate resources rather than the state.
+
+REST APIs are stateless because, rather than relying on the server remembering previous requests, REST applications require each request to contain 
+all of the information necessary for the server to understand it. Storing session state on the server violates the REST architecture’s stateless requirement. 
+As a result, the client must handle the complete session state.
